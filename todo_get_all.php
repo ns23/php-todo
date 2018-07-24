@@ -5,6 +5,6 @@ $db = new Database();
 
 $tasks = $db->getQuery('select * from list');
 
-echo json_encode($tasks);
+echo json_encode(array_reverse($tasks));
 
 ?>
